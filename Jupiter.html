@@ -1,0 +1,101 @@
+<html>
+    <style>
+     body{
+      background-color: #1C2951;
+     }
+     p{
+      color: white;
+      }
+    h1{
+      color: white;
+    }
+    h3{
+      color: white;
+    }
+    </style>
+<body>
+      <h1><b>Jupiter<b></h1>
+      <h3><b>Type: Gas Giant<b><h3>
+      <p><b>Orbital Characteristics:<b></p>
+      <ul>
+        <li>Distance from the Sun: 778.5 million km (5.20 AU)</li>
+        <li>Orbital Period: 11.86 Earth years</li>
+        <li>Rotation Period: Approximately 9.9 hours</li>
+      </ul>
+      
+      <p><b>Physical Characteristics:<b></p>
+        <ul>
+        <li>Diameter: 139,820 km</li>
+        <li>Surface Gravity: 24.79 m/s²</li>
+        <li>Surface Composition: Primarily hydrogen and helium, with a possible rocky core.</li>
+        </ul>
+      
+      <p><b>Atmospheric Composition:</b></p>
+      <ul>
+        <li>Dominated by hydrogen (about 90%) and helium (about 10%), with traces of ammonia, methane, and water vapor.</li>
+      </ul>
+      <p><b>Temperature:</b></p>
+      <ul>
+        <li>Average temperature around -145°C (-234°F) in the upper atmosphere.</li>
+      </ul>
+      <p><b>Scientific Interest</b></p>
+      <ul>
+        <li>Jupiter’s strong magnetic field, complex weather systems, and extensive moon system (including Europa, which may harbor subsurface oceans) are of significant interest in planetary science.
+        </li>
+      </ul>
+      <p><a href="HomePage.html">Go to Page 1 for HomePage</a></p>
+    
+    </body>
+    <script>
+      function createRandomDot() {
+          const dot = document.createElement('div');
+          dot.classList.add('dot');
+  
+          const size = Math.random() * 2 + 0.1; // Dot size between 5px and 10px
+          dot.style.width = `${size}px`;
+          dot.style.height = `${size}px`;
+  
+          const x = Math.random() * window.innerWidth;
+          const y = Math.random() * window.innerHeight;
+          dot.style.left = `${x}px`;
+          dot.style.top = `${y}px`;
+  
+          document.body.appendChild(dot);
+      }
+  
+      // Generate 100 random dots
+      for (let i = 0; i < 1000; i++) {
+          createRandomDot();
+      }
+  </script>
+  <style>
+    .dropdown-content {
+    display: none; /* Hidden by default */
+    position: absolute;
+    top: 100%; /* Position it below the parent item */
+    left: 0;
+    background-color: #1c2951;
+    min-width: 160px;
+    list-style-type: none;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    padding: 0;
+}
+
+.dropdown-content li a {
+    color: #ffffff;
+    padding: 12px 16px;
+    display: block;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.dropdown-content li a:hover {
+    background-color: #1C2951;
+}
+
+/* Display the dropdown on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+  </style>
+</html>

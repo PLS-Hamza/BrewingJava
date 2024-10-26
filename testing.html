@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Random White Dots</title>
+    <style>
+      body {
+        margin: 0;
+        overflow: hidden;
+        background-color: black;
+      }
+      .dot {
+        position: absolute;
+        border-radius: 50%;
+        background-color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <script>
+      function createRandomDot() {
+        const dot = document.createElement("div");
+        dot.classList.add("dot");
+
+        const size = Math.random() * 5 + 5; // Dot size between 5px and 10px
+        dot.style.width = `${size}px`;
+        dot.style.height = `${size}px`;
+
+        const x = Math.random() * window.innerWidth;
+        const y = Math.random() * window.innerHeight;
+        dot.style.left = `${x}px`;
+        dot.style.top = `${y}px`;
+
+        document.body.appendChild(dot);
+      }
+
+      // Generate 100 random dots
+      for (let i = 0; i < 100; i++) {
+        createRandomDot();
+      }
+    </script>
+  </body>
+</html>
