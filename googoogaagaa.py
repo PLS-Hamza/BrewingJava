@@ -1,0 +1,1 @@
+print("IS THAT A STAR")
